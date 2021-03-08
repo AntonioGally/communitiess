@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/native";
 import ArrowLeft from "../assets/Svgs/ArrowLeft.svg";
+import Linkedin from "../assets/Svgs/linkedin.svg";
+
 export function ButtonPrimary(props) {
   return (
     <>
@@ -19,6 +21,20 @@ export function ButtonSecondary(props) {
     </>
   );
 }
+export function ButtonOutline(props) {
+  return (
+    <>
+      <ContainerButtonOutline>
+        {props.icon ? (
+          <Linkedin width={30} height={30} style={{ position: "absolute", left:"18%" }} />
+        ) : (
+          ""
+        )}
+        <TextButtonOutline>{props.text}</TextButtonOutline>
+      </ContainerButtonOutline>
+    </>
+  );
+}
 export function ButtonArrowBack() {
   return (
     <>
@@ -28,6 +44,23 @@ export function ButtonArrowBack() {
     </>
   );
 }
+export const ContainerButtonOutline = styled.View`
+  flex-direction: row;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 0px;
+  border: 1px solid #0077b7;
+`;
+export const TextButtonOutline = styled.Text`
+  font-family: "WorkSans_500Medium";
+  color: #0077b7;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+`;
 
 export const ContainerPrimary = styled.View`
   width: 100%;

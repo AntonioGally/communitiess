@@ -7,7 +7,7 @@ export const Container = styled.View`
 `;
 export const ImageContent = styled.View`
   width: 100%;
-  height: 60%;
+  height: 55%;
 `;
 export const Text = styled.Text`
   font-family: "WorkSans_700Bold";
@@ -26,7 +26,8 @@ export const ButtonsContent = styled.View`
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  height: 15%;
+  margin-top:5%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

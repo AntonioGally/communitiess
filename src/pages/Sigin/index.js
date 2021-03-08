@@ -10,7 +10,7 @@ import {
 } from "./styles";
 import { ButtonArrowBack } from "../../elements/Buttons";
 import { PrimaryInput } from "../../elements/Input";
-import { ButtonPrimary, ButtonSecondary } from "../../elements/Buttons";
+import { ButtonPrimary, ButtonOutline } from "../../elements/Buttons";
 import { useNavigation } from "@react-navigation/native";
 export default function Sigin() {
   const navigation = useNavigation();
@@ -41,7 +41,7 @@ export default function Sigin() {
             <ButtonPrimary text={"Entrar"} />
           </TouchableOpacity>
           <TouchableOpacity>
-            <ButtonSecondary text={"Ainda não tenho conta"} />
+            <ButtonOutline text={"Entrar com Linkedin"} icon />
           </TouchableOpacity>
         </ButtonsContent>
       </Container>
