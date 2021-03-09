@@ -1,5 +1,6 @@
-import React from "react";
-import { TouchableOpacity } from "react-native";
+import React, { useContext } from "react";
+import { TouchableOpacity, View } from "react-native";
+import { SignupContext } from "../../../context/Signup.js";
 import {
   Container,
   Header,
@@ -8,13 +9,16 @@ import {
   Label,
   ButtonsContent,
 } from "./styles";
-import { ButtonArrowBack } from "../../../elements/Buttons";
 import { PrimaryInput } from "../../../elements/Input";
-import { ButtonPrimary, ButtonOutline } from "../../../elements/Buttons";
-import { View } from "react-native";
+import {
+  ButtonPrimary,
+  ButtonOutline,
+  ButtonArrowBack,
+} from "../../../elements/Buttons";
 import { useNavigation } from "@react-navigation/native";
 export default function Signup() {
   const navigation = useNavigation();
+  const { setPage } = useContext(SignupContext);
   return (
     <>
       <Container>
@@ -41,7 +45,7 @@ export default function Signup() {
           <TouchableOpacity style={{ marginBottom: "4%" }}>
             <ButtonOutline text={"Entrar com Linkedin"} icon />
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => setPage("SecondPage")}>
             <ButtonPrimary text={"Prosseguir"} />
           </TouchableOpacity>
         </ButtonsContent>

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { SignupContext } from "../../../context/Signup.js";
 import { TouchableOpacity, View } from "react-native";
 import { ButtonArrowBack } from "../../../elements/Buttons";
 import { PrimaryInput } from "../../../elements/Input";
@@ -12,12 +13,13 @@ import {
   ButtonsContent,
 } from "./styles";
 
-export default function SecondPage(props) {
+export default function SecondPage() {
+  const { setPage } = useContext(SignupContext);
   return (
     <>
       <Container>
         <Header>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => setPage("FirstPage")}>
             <ButtonArrowBack />
           </TouchableOpacity>
           <TextHeader style={{ marginTop: "10%" }}>
@@ -32,7 +34,7 @@ export default function SecondPage(props) {
           </View>
         </FormContent>
         <ButtonsContent>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => setPage("ThirdPage")}>
             <ButtonPrimary text={"Prosseguir"} />
           </TouchableOpacity>
         </ButtonsContent>
