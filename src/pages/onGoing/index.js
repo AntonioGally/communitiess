@@ -50,7 +50,7 @@ export default function onGoing() {
           <TouchableOpacity onPress={() => navigation.navigate("Sigin")}>
             <ButtonPrimary text={"Entrar"} />
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Signup")}>
             <ButtonSecondary text={"Ainda não tenho conta"} />
           </TouchableOpacity>
         </ButtonsContent>

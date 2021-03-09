@@ -1,18 +1,19 @@
 import React from "react";
-import { View, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 import {
   Container,
   Header,
+  TextHeader,
   FormContent,
   Label,
   ButtonsContent,
-  TextHeader,
 } from "./styles";
-import { ButtonArrowBack } from "../../elements/Buttons";
-import { PrimaryInput } from "../../elements/Input";
-import { ButtonPrimary, ButtonOutline } from "../../elements/Buttons";
+import { ButtonArrowBack } from "../../../elements/Buttons";
+import { PrimaryInput } from "../../../elements/Input";
+import { ButtonPrimary, ButtonOutline } from "../../../elements/Buttons";
+import { View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-export default function Sigin() {
+export default function Signup() {
   const navigation = useNavigation();
   return (
     <>
@@ -22,26 +23,26 @@ export default function Sigin() {
             <ButtonArrowBack />
           </TouchableOpacity>
           <TextHeader style={{ marginTop: "10%" }}>
-            Bom te ter de volta por
+            Vamos criar uma conta
           </TextHeader>
-          <TextHeader>aqui, vamos entrando?</TextHeader>
+          <TextHeader>pra você, fica de boa!</TextHeader>
         </Header>
         <FormContent>
           <View style={{ marginBottom: "10%" }}>
-            <Label>Email:</Label>
+            <Label>Qual seu nome?</Label>
             <PrimaryInput autoCorrect={false} autoCapitalize="none" />
           </View>
           <View>
-            <Label>Senha:</Label>
+            <Label>Qual seu email?</Label>
             <PrimaryInput autoCorrect={false} autoCapitalize="none" />
           </View>
         </FormContent>
         <ButtonsContent>
           <TouchableOpacity style={{ marginBottom: "4%" }}>
-            <ButtonPrimary text={"Entrar"} />
+            <ButtonOutline text={"Entrar com Linkedin"} icon />
           </TouchableOpacity>
           <TouchableOpacity>
-            <ButtonOutline text={"Entrar com Linkedin"} icon />
+            <ButtonPrimary text={"Prosseguir"} />
           </TouchableOpacity>
         </ButtonsContent>
       </Container>

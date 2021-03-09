@@ -26,7 +26,11 @@ export function ButtonOutline(props) {
     <>
       <ContainerButtonOutline>
         {props.icon ? (
-          <Linkedin width={30} height={30} style={{ position: "absolute", left:"18%" }} />
+          <Linkedin
+            width={30}
+            height={30}
+            style={{ position: "absolute", left: "10%" }}
+          />
         ) : (
           ""
         )}
@@ -46,7 +50,7 @@ export function ButtonArrowBack() {
 }
 export const ContainerButtonOutline = styled.View`
   flex-direction: row;
-  position:relative;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 100%;

@@ -13,12 +13,12 @@ export const Text = styled.Text`
   font-family: "WorkSans_700Bold";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
 `;
 export const Comunidade = styled.Text`
   font-family: "WorkSans_700Bold";
   font-style: normal;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   color: #2568ef;
 `;
@@ -26,7 +26,7 @@ export const ButtonsContent = styled.View`
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top:5%;
+  margin-top: 5%;
   height: 20%;
   display: flex;
   flex-direction: column;
