@@ -1,10 +1,11 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  flex: 1;
   display: flex;
-  background: #ffffff;
+  flex: 1;
+  background: #fff;
   flex-direction: column;
+  position: relative;
 `;
 export const Header = styled.View`
   height: 30%;
@@ -40,6 +41,11 @@ export const ButtonsContent = styled.View`
   height: 20%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
+`;
+export const MySvg = styled.TouchableOpacity`
+  position: absolute;
+  right: 25px;
+  top: 58%;
+  z-index: 1000;
+  color: pink;
 `;

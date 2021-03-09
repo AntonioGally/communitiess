@@ -40,5 +40,12 @@ export const ButtonsContent = styled.View`
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
+`;
+export const MySvg = styled.TouchableOpacity`
+  position: absolute;
+  right: 25px;
+  top: 58%;
+  z-index: 1000;
+  color: pink;
 `;

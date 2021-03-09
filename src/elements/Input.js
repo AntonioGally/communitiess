@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components/native";
 
-export function PrimaryInput() {
-  return <Container />;
+export function PrimaryInput(props) {
+  return <Container {...props} />;
 }
 
 export const Container = styled.TextInput`
