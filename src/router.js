@@ -7,6 +7,7 @@ import Sigin from "./pages/Sigin/index.js";
 import Signup from "./pages/Signup/index.js";
 import SelectOptions from "./pages/SelectOptions/index.js";
 import SelectCommunities from "./pages/SelectCommunities/index.js";
+import CommunitiesProfile from "./pages/CommunitiesProfile/index.js";
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,10 @@ function Routes() {
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="SelectOptions" component={SelectOptions} />
         <Stack.Screen name="SelectCommunities" component={SelectCommunities} />
+        <Stack.Screen
+          name="CommunitiesProfile"
+          component={CommunitiesProfile}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -48,7 +48,7 @@ export default function Sigin() {
       >
         <Container>
           <Header>
-            <TouchableOpacity onPress={() => navigation.navigate("OnGoing")}>
+            <TouchableOpacity onPress={() => navigation.goBack("OnGoing")}>
               <ButtonArrowBack />
             </TouchableOpacity>
             <TextHeader style={{ marginTop: "10%" }}>
