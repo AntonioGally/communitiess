@@ -4,6 +4,7 @@ export const Container = styled.View`
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-color:#fff;
 `;
 export const ImageContent = styled.View`
   width: 100%;

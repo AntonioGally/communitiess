@@ -33,8 +33,8 @@ export default function App() {
 }
 export const Container = styled.View`
   flex: 1;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: #fff;
 `;

@@ -36,7 +36,7 @@ export const Label = styled.Text`
 `;
 export const ButtonsContent = styled.View`
   width: 90%;
-  height: 18%;
+  height: 23%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
