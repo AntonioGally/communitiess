@@ -49,7 +49,7 @@ export default function SelectCommunities() {
           </TextHeader>
           <TextHeader>seu interesse: </TextHeader>
         </Header>
-        <CardsContent>
+        <CardsContent showsVerticalScrollIndicator={false}>
           {list.map((information, index) => (
             <Cards
               onPress={() =>
@@ -63,7 +63,7 @@ export default function SelectCommunities() {
           ))}
         </CardsContent>
         <ButtonsContent>
-          <TextJumpContent>
+          <TextJumpContent onPress={() => navigation.navigate("HomeFeed")}>
             <TextJump>Quero pular essa parte</TextJump>
           </TextJumpContent>
         </ButtonsContent>

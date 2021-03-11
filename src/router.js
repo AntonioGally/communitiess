@@ -8,6 +8,7 @@ import Signup from "./pages/Signup/index.js";
 import SelectOptions from "./pages/SelectOptions/index.js";
 import SelectCommunities from "./pages/SelectCommunities/index.js";
 import CommunitiesProfile from "./pages/CommunitiesProfile/index.js";
+import HomeFeed from "./pages/HomeFeed/index.js";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ function Routes() {
           name="CommunitiesProfile"
           component={CommunitiesProfile}
         />
+        <Stack.Screen name="HomeFeed" component={HomeFeed} />
       </Stack.Navigator>
     </NavigationContainer>
   );

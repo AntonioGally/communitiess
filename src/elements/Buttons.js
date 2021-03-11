@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/native";
 import ArrowLeft from "../assets/Svgs/ArrowLeft.svg";
+import ArrowLeftDark from "../assets/Svgs/ArrowLeft_Dark.svg";
+
 import Linkedin from "../assets/Svgs/linkedin.svg";
 
 export function ButtonPrimary(props) {
@@ -44,6 +46,15 @@ export function ButtonArrowBack() {
     <>
       <ContainerArrowBack>
         <ArrowLeft width={24} height={24} />
+      </ContainerArrowBack>
+    </>
+  );
+}
+export function ButtonArrowBackWhite() {
+  return (
+    <>
+      <ContainerArrowBack style={{ backgroundColor: "#FFFFFF" }}>
+        <ArrowLeftDark width={24} height={24} />
       </ContainerArrowBack>
     </>
   );
