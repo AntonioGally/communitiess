@@ -69,7 +69,6 @@ export const Text = styled.Text`
   font-size: 16px;
   line-height: 24px;
   margin-top: 8px;
-  padding-bottom: 5%;
 `;
 export const ButtonsContent = styled.View`
   height: 10%;
@@ -90,4 +89,42 @@ export const TextButton = styled.Text`
   color: #fff;
   line-height: 24px;
   margin-right: 10px;
+`;
+
+export const CreatorContent = styled.View`
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+`;
+export const ProfileContent = styled.View`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 5%;
+`;
+export const Photo = styled.Image`
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+`;
+export const Name = styled.Text`
+  font-family: "WorkSans_400Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-left: 8px;
+`;
+export const ButtonQrCode = styled.TouchableOpacity`
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  background-color: #2568ef;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

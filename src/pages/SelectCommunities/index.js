@@ -8,6 +8,7 @@ import {
   ButtonsContent,
   TextJumpContent,
   TextJump,
+  ButtonQrCode,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
 import Cards from "./Cards";
@@ -19,7 +20,7 @@ export default function SelectCommunities() {
     {
       image: require("../../assets/SelectCommunities/Image1.png"),
       title: "Papo de UX",
-      subtitle: "Design, produto",
+      subtitle: "Design, Produto",
     },
     {
       image: require("../../assets/SelectCommunities/Image2.png"),
@@ -29,7 +30,7 @@ export default function SelectCommunities() {
     {
       image: require("../../assets/SelectCommunities/Image3.png"),
       title: "Mergo",
-      subtitle: "Design, produto",
+      subtitle: "Design, Produto",
     },
     {
       image: require("../../assets/SelectCommunities/Image4.png"),
@@ -53,7 +54,10 @@ export default function SelectCommunities() {
           {list.map((information, index) => (
             <Cards
               onPress={() =>
-                navigation.navigate("CommunitiesProfile", { information })
+                navigation.navigate("CommunitiesProfile", {
+                  information,
+                  fromWhre: "SelectCommunities",
+                })
               }
               key={index}
               image={information.image}
