@@ -11,25 +11,32 @@ import CommunitiesProfile from "./pages/CommunitiesProfile/index.js";
 import HomeFeed from "./pages/HomeFeed/index.js";
 import CommuniteQR from "./pages/CommuniteQR/index.js";
 
+import BottomMenuProvider from "./context/BottomMenu.js";
+
 const Stack = createStackNavigator();
 
 function Routes() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator headerMode="none">
-        <Stack.Screen name="OnGoing" component={OnGoing} />
-        <Stack.Screen name="Sigin" component={Sigin} />
-        <Stack.Screen name="Signup" component={Signup} />
-        <Stack.Screen name="SelectOptions" component={SelectOptions} />
-        <Stack.Screen name="SelectCommunities" component={SelectCommunities} />
-        <Stack.Screen
-          name="CommunitiesProfile"
-          component={CommunitiesProfile}
-        />
-        <Stack.Screen name="HomeFeed" component={HomeFeed} />
-        <Stack.Screen name="CommuniteQR" component={CommuniteQR} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <BottomMenuProvider>
+      <NavigationContainer>
+        <Stack.Navigator headerMode="none">
+          <Stack.Screen name="OnGoing" component={OnGoing} />
+          <Stack.Screen name="Sigin" component={Sigin} />
+          <Stack.Screen name="Signup" component={Signup} />
+          <Stack.Screen name="SelectOptions" component={SelectOptions} />
+          <Stack.Screen
+            name="SelectCommunities"
+            component={SelectCommunities}
+          />
+          <Stack.Screen
+            name="CommunitiesProfile"
+            component={CommunitiesProfile}
+          />
+          <Stack.Screen name="CommuniteQR" component={CommuniteQR} />
+          <Stack.Screen name="HomeFeed" component={HomeFeed} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </BottomMenuProvider>
   );
 }
 
