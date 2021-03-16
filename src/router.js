@@ -10,6 +10,7 @@ import SelectCommunities from "./pages/SelectCommunities/index.js";
 import CommunitiesProfile from "./pages/CommunitiesProfile/index.js";
 import HomeFeed from "./pages/HomeFeed/index.js";
 import CommuniteQR from "./pages/CommuniteQR/index.js";
+import Search from "./pages/Search/index.js";
 
 import BottomMenuProvider from "./context/BottomMenu.js";
 
@@ -34,6 +35,7 @@ function Routes() {
           />
           <Stack.Screen name="CommuniteQR" component={CommuniteQR} />
           <Stack.Screen name="HomeFeed" component={HomeFeed} />
+          <Stack.Screen name="Search" component={Search} />
         </Stack.Navigator>
       </NavigationContainer>
     </BottomMenuProvider>

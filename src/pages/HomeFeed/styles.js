@@ -32,11 +32,15 @@ export const PostArea = styled.ScrollView`
   height: 80%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 90px;
 `;
 export const BottomMenu = styled.View`
   width: 100%;
   display: flex;
-  height: 10%;
+  background-color: #fff;
+  height: 90px;
   flex-direction: row;
   align-items: center;
+  position: absolute;
+  bottom: 0;
 `;

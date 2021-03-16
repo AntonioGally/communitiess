@@ -139,9 +139,7 @@ export default function SelectOptions() {
               <TextPrimary>Prosseguir</TextPrimary>
             </ButtonPrimary>
           )}
-          <TextJumpContent
-            onPress={() => navigation.navigate("SelectCommunities")}
-          >
+          <TextJumpContent onPress={() => navigation.navigate("HomeFeed")}>
             <TextJump>Quero pular essa parte</TextJump>
           </TextJumpContent>
         </ButtonsContent>

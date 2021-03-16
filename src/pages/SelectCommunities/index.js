@@ -8,7 +8,6 @@ import {
   ButtonsContent,
   TextJumpContent,
   TextJump,
-  ButtonQrCode,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
 import Cards from "./Cards";

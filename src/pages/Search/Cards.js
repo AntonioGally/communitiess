@@ -14,6 +14,7 @@ function Cards(props) {
     </Container>
   );
 }
+
 export default memo(Cards);
 
 export const Container = styled.TouchableOpacity`
