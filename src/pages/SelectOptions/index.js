@@ -139,7 +139,7 @@ export default function SelectOptions() {
               <TextPrimary>Prosseguir</TextPrimary>
             </ButtonPrimary>
           )}
-          <TextJumpContent onPress={() => navigation.navigate("HomeFeed")}>
+          <TextJumpContent onPress={() => navigation.navigate("MainTabScreen")}>
             <TextJump>Quero pular essa parte</TextJump>
           </TextJumpContent>
         </ButtonsContent>

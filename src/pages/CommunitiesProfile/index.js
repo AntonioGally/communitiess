@@ -93,7 +93,7 @@ export default function communitiesProfile({ route }) {
           </CreatorContent>
         </TextContent>
         <ButtonsContent>
-          <TextButtonContent onPress={() => navigation.navigate("HomeFeed")}>
+          <TextButtonContent onPress={() => navigation.navigate("MainTabScreen")}>
             <TextButton>Participar dessa comunidade</TextButton>
             <ArrowSquareRight />
           </TextButtonContent>

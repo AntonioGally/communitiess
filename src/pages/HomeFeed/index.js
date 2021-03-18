@@ -130,9 +130,9 @@ export default function HomeFeed() {
             />
           ))}
         </PostArea>
-        <BottomMenu>
+        {/* <BottomMenu>
           <BottomMenuComponent />
-        </BottomMenu>
+        </BottomMenu> */}
       </Container>
     </>
   );

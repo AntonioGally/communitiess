@@ -66,7 +66,7 @@ export default function SelectCommunities() {
           ))}
         </CardsContent>
         <ButtonsContent>
-          <TextJumpContent onPress={() => navigation.navigate("HomeFeed")}>
+          <TextJumpContent onPress={() => navigation.navigate("MainTabScreen")}>
             <TextJump>Quero pular essa parte</TextJump>
           </TextJumpContent>
         </ButtonsContent>

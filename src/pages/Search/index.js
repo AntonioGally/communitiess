@@ -89,6 +89,7 @@ const Search = () => {
   return (
     <>
       <KeyboardAwareScrollView
+        style={{ backgroundColor: "#fff" }}
         contentContainerStyle={!auxKeyboard ? { flex: 1 } : {}}
       >
         <Container>
@@ -150,9 +151,9 @@ const Search = () => {
             </CardsContent>
           )}
 
-          <BottomMenu>
+          {/* <BottomMenu>
             <BottomMenuComponent />
-          </BottomMenu>
+          </BottomMenu> */}
         </Container>
       </KeyboardAwareScrollView>
     </>

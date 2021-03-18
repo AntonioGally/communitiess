@@ -77,7 +77,7 @@ export default function Sigin() {
           <ButtonsContent>
             <TouchableOpacity
               style={{ marginBottom: "4%" }}
-              onPress={() => navigation.navigate("HomeFeed")}
+              onPress={() => navigation.navigate("MainTabScreen")}
             >
               <ButtonPrimary text={"Entrar"} />
             </TouchableOpacity>
