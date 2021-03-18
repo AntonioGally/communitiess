@@ -14,6 +14,7 @@ import UserCircle_Active from "../assets/Svgs/BottomMenu/UserCircle_Active.svg";
 import HomeFeed from "../pages/HomeFeed/index.js";
 import Search from "../pages/Search/index.js";
 import Notifications from "../pages/Notifications/index.js";
+import UserProfile from "../pages/UserProfile/index.js";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -72,7 +73,7 @@ const MainTabScreen = () => (
     />
     <Tab.Screen
       name="UserProfile"
-      component={Notifications}
+      component={UserProfile}
       options={{
         tabBarLabel: "Pefil",
         tabBarColor: "#fff",

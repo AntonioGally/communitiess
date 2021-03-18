@@ -7,7 +7,7 @@ export const Container = styled.View`
   background-color: #fff;
 `;
 export const Header = styled.View`
-  height: 100px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: center;

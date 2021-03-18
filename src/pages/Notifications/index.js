@@ -34,7 +34,7 @@ const Notifications = () => {
         <Header>
           <Title>Notificações</Title>
         </Header>
-        <NotificationsContent>
+        <NotificationsContent showsVerticalScrollIndicator={false}>
           {list.map((information, index) => (
             <Card key={index}>
               {information.action === "like" && (

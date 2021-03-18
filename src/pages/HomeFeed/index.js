@@ -2,13 +2,11 @@ import React from "react";
 import PlusCircle from "../../assets/Svgs/PlusCircle.svg";
 import CommunitiesButtons from "./Components/CommunitiesButtons/index.js";
 import Posts from "./Components/Posts/index.js";
-import BottomMenuComponent from "../../elements/BottomMenu";
 
 import {
   Container,
   Header,
   PostArea,
-  BottomMenu,
   HeaderButtonPlus,
 } from "./styles.js";
 
